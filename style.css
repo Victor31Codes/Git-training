@@ -1,0 +1,36 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+main {
+  width: 100vw;
+  height: 100vh;
+  display: grid;
+  place-content: center;
+}
+
+body {
+  background-color: #141414;
+}
+section {
+  display: flex;
+  width: 640px;
+  height: 494px;
+}
+
+section img {
+  width: 0;
+  flex-grow: 1;
+  object-fit: cover;
+  opacity: 0.65;
+  transition: 0.5s ease;
+}
+
+section img:hover {
+  width: 18.75rem;
+  cursor: pointer;
+  opacity: 1;
+  filter: contrast(110%);
+}
